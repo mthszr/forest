@@ -3,20 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.png" type="image/png" />
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-green-800 font-sans"> 
+
+  <body class="bg-green-800 font-sans mb-96">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
-        <span class="size-2 bg-green-300 block rounded-full relative -left-1"></span>
+        <span
+          class="size-2 bg-green-300 block rounded-full relative -left-1"
+        ></span>
         <div class="flex text-green-300 divide-x-2 divide-green-800">
           <div class="px-4 py-2 capitalize" id="day">Segunda</div>
           <div class="px-4 py-2" id="temperature">25°</div>
           <div class="px-4 py-2" id="weather">⛅</div>
-        </div> 
+        </div>
       </div>
     </div>
+
+    <header class="container flex justify-between gap-8 py-8">
+      <a href="./">
+        <img src="../img/forest.svg" alt="Forest Logo" />
+      </a>
+      <nav>
+        <ul class="text-white text-xl flex items-center flex-wrap gap-8">
+          <li>
+            <a
+              class="hover:underline hover:underline-offset-8"
+              href="#acomodacoes"
+              >Acomodações</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-8" href="#eventos"
+              >Eventos</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline hover:underline-offset-8"
+              href="#experiencias"
+              >Experiências</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-8" href="#contato"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="text-white relative pt-64 bg-gradient-to-t from-green-950/80 px-8 pb-8 rounded-2xl overflow-hidden">
+        <img
+          class="inset-0 absolute size-full object-cover -z-10"
+          src="../img/floresta.jpg"
+          alt
+        />
+        <div
+          class="bg-green-950 inline-flex mb-8 gap-8 items-center py-1 pr-1 pl-4 rounded-full"
+        >
+          Vagas para Dezembro abertas
+          <a
+            class="bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+            href
+            >Reserve Hoje</a
+          >
+        </div>
+        <h1 class="mb-20 font-serif text-balance max-w-screen-sm text-5xl">
+          Venha Experimentar a Vida na Floresta
+        </h1>
+        <div class="text-sm flex justify-between items-end">
+          <p>
+            Melhores locais para visitar
+            <a
+              class="underline decoration-2 underline-offset-4 hover:no-underline"
+              href
+              >2049</a
+            >
+          </p>
+          <div class="uppercase mb-2">
+            <p>Recomendado por</p>
+            <p class="flex items-center gap-4">
+              <img
+                class="w-28"
+                src="../img/parceiros//wildbeast.svg"
+                alt="Wildbeast Logo"
+              />
+              <span>|</span>
+              Revista Nacional
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
