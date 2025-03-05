@@ -10,9 +10,7 @@
   <body class="bg-green-800 font-sans scroll-smooth">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
-        <span
-          class="size-2 bg-green-300 block rounded-full relative -left-1"
-        ></span>
+        <span class="size-2 neon block relative -left-1"></span>
         <div class="flex text-green-300 divide-x-2 divide-green-800">
           <div class="px-4 py-2 capitalize" id="dia">segunda</div>
           <div class="px-4 py-2" id="temperatura">25º</div>
@@ -68,7 +66,7 @@
 
       <button
         id="mobile-menu-button"
-        class="flex items-center gap-3 bg-green-400 text-green-900 py-2 px-4 rounded-full lg:hidden"
+        class="btn flex items-center gap-3 text-green-900 py-1 rounded-full lg:hidden"
       >
         Menu
         <span
@@ -101,9 +99,11 @@
         >
           vagas para dezembro abertas
           <a
-            class="bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
-            href=""
-            >Reserve Hoje</a
+            class="btn inline-flex items-center gap-2"
+            href="#contato"
+            >Reserve Hoje
+            <img src="../img/seta.svg" alt="">
+            </a
           >
         </div>
         <h1
@@ -139,7 +139,7 @@
     <!-- acomodacoes -->
     <section
       id="acomodacoes"
-      class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16"
+      class="radial-gradient container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16"
     >
       <div
         class="content-end bg-[url('../img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"
@@ -151,24 +151,24 @@
           class="text-gray-200 *:flex *:items-center *:gap-4 grid gap-4 sm:text-xl"
         >
           <li>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>Experimente
-            a natureza de perto
+            <span class="h-0.5 w-6 neon inline-block"></span>Experimente a
+            natureza de perto
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>Conecte-se
-            com a natureza
+            <span class="h-0.5 w-6 neon inline-block"></span>Conecte-se com a
+            natureza
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span
-            >Desconecte-se do digital
+            <span class="h-0.5 w-6 neon inline-block"></span>Desconecte-se do
+            digital
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>Observe a
-            vida selvagem
+            <span class="h-0.5 w-6 neon inline-block"></span>Observe a vida
+            selvagem
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>Escolha a
-            sua cabine preferida
+            <span class="h-0.5 w-6 neon inline-block"></span>Escolha a sua
+            cabine preferida
           </li>
         </ul>
       </div>
@@ -239,7 +239,7 @@
             </p>
             <a
               href="#contato"
-              class="justify-self-start self-end bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+              class="justify-self-start self-end btn"
               >Reservar 23/03</a
             >
           </div>
@@ -257,7 +257,7 @@
             </p>
             <a
               href="#contato"
-              class="justify-self-start self-end bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+              class="justify-self-start self-end btn"
               >Reservar 15/04</a
             >
           </div>
@@ -277,7 +277,7 @@
             </p>
             <a
               href="#contato"
-              class="justify-self-start self-end bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+              class="justify-self-start self-end btn"
               >Reservar 18/08</a
             >
           </div>
@@ -300,7 +300,7 @@
           Escolha sua próxima aventura
         </h2>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-green-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Observação Noturna
         </h3>
@@ -308,7 +308,7 @@
           Explore a vida selvagem em seu habitat natural sob as estrelas.
         </p>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-green-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Vida Selvagem
         </h3>
@@ -316,7 +316,7 @@
           Observe a vida selvagem em seu habitat natural.
         </p>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-green-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Canoagem
         </h3>
@@ -385,9 +385,7 @@
         <div
           class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"
         >
-          <div
-            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="../img/manha.svg" alt="" />
           </div>
           <h3 class="font-serif text-2xl text-white">Amanhecer</h3>
@@ -400,9 +398,7 @@
         <div
           class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:translate-y-12 sm:hover:translate-y-10"
         >
-          <div
-            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="../img/dia.svg" alt="" />
           </div>
           <h3 class="font-serif text-2xl text-white">Meio-dia</h3>
@@ -415,9 +411,7 @@
         <div
           class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"
         >
-          <div
-            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="../img/noite.svg" alt="" />
           </div>
           <h3 class="font-serif text-2xl text-white">Anoitecer</h3>
@@ -442,7 +436,7 @@
         </p>
         <div class="grid gap-4">
           <div>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-green-300">Base</h2>
             <p class="text-gray-300">
               Rua da Mata, 123 - Floresta Nacional - RJ
@@ -450,13 +444,13 @@
           </div>
 
           <div>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-green-300">Email</h2>
             <p class="text-gray-300">contato@forest.com</p>
           </div>
 
           <div>
-            <span class="h-0.5 w-6 bg-green-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-green-300">Telefone</h2>
             <p class="text-gray-300">21 9999-9999</p>
           </div>
@@ -468,22 +462,12 @@
       >
         <div class="grid gap-1">
           <label for="nome" class="text-white">Nome</label>
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            class="rounded-md border-2 border-green-800 bg-green-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-900 placeholder:text-green-900"
-          />
+          <input type="text" name="nome" id="nome" class="input" />
         </div>
         <div class="grid gap-4 sm:grid-cols-2">
           <div class="grid gap-1">
             <label for="email" class="text-white">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="rounded-md border-2 border-green-800 bg-green-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-900 placeholder:text-green-900"
-            />
+            <input type="email" name="email" id="email" class="input" />
           </div>
           <div class="grid gap-1">
             <label for="telefone" class="text-white">Telefone</label>
@@ -492,7 +476,7 @@
               placeholder="(00) 0000-0000"
               name="telefone"
               id="telefone"
-              class="rounded-md border-2 border-green-800 bg-green-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-900 placeholder:text-green-900"
+              class="input"
             />
           </div>
         </div>
@@ -503,11 +487,11 @@
             name="mensagem"
             id="mensagem"
             rows="5"
-            class="rounded-md border-2 border-green-800 bg-green-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-900 placeholder:text-green-900 resize-none"
+            class="input resize-none"
           ></textarea>
         </div>
         <button
-          class="place-self-start bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+          class="place-self-start btn"
         >
           Enviar Email
         </button>
@@ -574,12 +558,13 @@
       temperatura.innerText = `${random}º`;
       tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : `⛅`;
 
-      const date = new Date()
-      dia.innerText = date.toLocaleDateString('pt-BR', {
-        weekday: 'long'
-      })
+      const date = new Date();
+      dia.innerText = date.toLocaleDateString("pt-BR", {
+        weekday: "long",
+      });
 
-      video.src = random < 25 ? `../img/video_chuva.mp4` : `../img/video_sol.mp4`;
+      video.src =
+        random < 25 ? `../img/video_chuva.mp4` : `../img/video_sol.mp4`;
 
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
