@@ -7,7 +7,7 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-green-800 font-sans">
+  <body class="bg-green-800 font-sans scroll-smooth">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
         <span
@@ -25,34 +25,60 @@
       <a href="../">
         <img src="../img/forest.svg" alt="Forest" />
       </a>
-      <nav>
-        <ul class="text-white text-xl flex flex-wrap gap-8">
+      <nav
+        id="mobile-menu"
+        class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0"
+      >
+        <div
+          class="fixed lg:hidden inset-0 bg-green-950/40 backdrop-blur-md"
+        ></div>
+        <ul
+          class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full lg:text-xl lg:flex lg:flex-wrap lg:gap-8"
+        >
           <li>
             <a
-              class="hover:underline hover:underline-offset-8"
+              class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8"
               href="#acomodacoes"
               >Acomodações</a
             >
           </li>
           <li>
-            <a class="hover:underline hover:underline-offset-8" href="#eventos"
+            <a
+              class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8"
+              href="#eventos"
               >Eventos</a
             >
           </li>
           <li>
             <a
-              class="hover:underline hover:underline-offset-8"
+              class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8"
               href="#experiencias"
               >Experiências</a
             >
           </li>
           <li>
-            <a class="hover:underline hover:underline-offset-8" href="#contato"
+            <a
+              class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8"
+              href="#contato"
               >Contato</a
             >
           </li>
         </ul>
       </nav>
+
+      <button
+        id="mobile-menu-button"
+        class="flex items-center gap-3 bg-green-400 text-green-900 py-2 px-4 rounded-full lg:hidden"
+      >
+        Menu
+        <span
+          class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-green-800"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
     </header>
 
     <main class="container">
@@ -498,7 +524,9 @@
     </section>
 
     <footer class="container pb-8">
-      <div class="bg-green-900 grid gap-8 lg:grid-cols-2 mb-8 rounded-2xl p-6 sm:p-12">
+      <div
+        class="bg-green-900 grid gap-8 lg:grid-cols-2 mb-8 rounded-2xl p-6 sm:p-12"
+      >
         <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
           <div>
             <h3 class="text-white font-serif text-xl mb-4">Endereço</h3>
@@ -514,7 +542,7 @@
           </div>
         </div>
         <div class="lg:justify-self-end">
-          <img class="mb-4" src="../img/forest.svg" alt="Forest Logo">
+          <img class="mb-4" src="../img/forest.svg" alt="Forest Logo" />
           <p class="text-gray-400">Conecte-se com a natureza</p>
         </div>
       </div>
@@ -529,5 +557,20 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+      });
+
+      mobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+      });
+    </script>
   </body>
 </html>
