@@ -7,7 +7,6 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-
   <body class="bg-green-800 font-sans mb-96">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
@@ -15,19 +14,19 @@
           class="size-2 bg-green-300 block rounded-full relative -left-1"
         ></span>
         <div class="flex text-green-300 divide-x-2 divide-green-800">
-          <div class="px-4 py-2 capitalize" id="day">Segunda</div>
-          <div class="px-4 py-2" id="temperature">25°</div>
-          <div class="px-4 py-2" id="weather">⛅</div>
+          <div class="px-4 py-2 capitalize" id="dia">segunda</div>
+          <div class="px-4 py-2" id="temperatura">25º</div>
+          <div class="px-4 py-2" id="tempo">🌤️</div>
         </div>
       </div>
     </div>
 
-    <header class="container flex justify-between gap-8 py-8">
-      <a href="./">
-        <img src="../img/forest.svg" alt="Forest Logo" />
+    <header class="container flex items-center justify-between gap-8 py-8">
+      <a href="../">
+        <img src="../img/forest.svg" alt="Forest" />
       </a>
       <nav>
-        <ul class="text-white text-xl flex items-center flex-wrap gap-8">
+        <ul class="text-white text-xl flex flex-wrap gap-8">
           <li>
             <a
               class="hover:underline hover:underline-offset-8"
@@ -58,44 +57,44 @@
 
     <main class="container">
       <div
-        class="text-white relative pt-12 sm:pt-64 bg-gradient-to-t from-green-950/80 px-4 sm:px-8 pb-8 rounded-2xl overflow-hidden"
+        class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-green-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12"
       >
         <img
-          class="inset-0 absolute size-full object-cover -z-10"
+          class="absolute inset-0 size-full object-cover -z-10"
           src="../img/floresta.jpg"
-          alt
+          alt=""
         />
         <div
-          class="bg-green-950/60 sm:bg-green-950 rounded-xl flex flex-col gap-2 p-4 sm:inline-flex mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pr-1 sm:pl-4 sm:rounded-full items-start sm:flex-row"
+          class="bg-green-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-green-950 sm:inline-flex sm:flex-row sm:rounded-full"
         >
-          Vagas para Dezembro abertas
+          vagas para dezembro abertas
           <a
             class="bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
-            href
+            href=""
             >Reserve Hoje</a
           >
         </div>
         <h1
-          class="mb-8 sm:mb-20 font-serif text-balance max-w-screen-sm text-4xl sm:text-5xl"
+          class="mb-8 font-serif text-balance max-w-screen-sm text-4xl sm:mb-20 sm:text-5xl"
         >
           Venha Experimentar a Vida na Floresta
         </h1>
-        <div class="text-sm sm:flex sm:justify-between sm:items-end">
+        <div class="text-sm sm:flex justify-between items-end">
           <p class="max-sm:mb-4">
             Melhores locais para visitar
             <a
               class="underline decoration-2 underline-offset-4 hover:no-underline"
-              href
+              href="../"
               >2049</a
             >
           </p>
-          <div class="uppercase mb-2">
-            <p>Recomendado por</p>
+          <div>
+            <p class="uppercase mb-2">Recomendado por</p>
             <p class="flex items-center gap-4">
               <img
                 class="w-28"
-                src="../img/parceiros//wildbeast.svg"
-                alt="Wildbeast Logo"
+                src="../img/parceiros/wildbeast.svg"
+                alt="Wildbeast"
               />
               <span>|</span>
               Revista Nacional
@@ -105,13 +104,13 @@
       </div>
     </main>
 
-    <!-- acomodações -->
+    <!-- acomodacoes -->
     <section
       id="acomodacoes"
-      class="container lg:grid grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16"
+      class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16"
     >
       <div
-        class="content-end bg-[url(../img/padrao.svg)] bg-no-repeat bg-contain bg-left-bottom"
+        class="content-end bg-[url('../img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"
       >
         <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">
           Refúgio Natural
@@ -187,7 +186,7 @@
           Conecte-se com a natureza
         </p>
         <h2
-          class="mb-8 mx-auto text-balance font-serif text-center max-w-screen-md text-white text-4xl sm:text-6xl"
+          class="mb-8 mx-auto font-serif text-balance text-center max-w-screen-md text-white text-4xl sm:text-6xl"
         >
           Cada Som, Cada Momento, Uma Nova Descoberta
         </h2>
@@ -197,13 +196,13 @@
           <div
             class="grid snap-center gap-4 bg-green-800 p-6 sm:p-8 rounded-xl"
           >
-            <h3 class="text-green-200 text-2xl font-serif">Lua Nova</h3>
+            <h3 class="text-green-300 text-2xl font-serif">Lua Nova</h3>
             <div class="text-white">
               <p class="font-serif text-5xl">23</p>
               <p class="text-xl">Março 2049</p>
             </div>
             <p class="text-gray-300 text-balance">
-              Melhor período para observação astronômica. O céu estará claro e
+              Melhor período para observação astronômica. O Céu estará claro e
               as estrelas visíveis.
             </p>
             <a
@@ -215,13 +214,13 @@
           <div
             class="grid snap-center gap-4 bg-green-800 p-6 sm:p-8 rounded-xl"
           >
-            <h3 class="text-green-200 text-2xl font-serif">Aurora Boreal</h3>
+            <h3 class="text-green-300 text-2xl font-serif">Aurora Boreal</h3>
             <div class="text-white">
               <p class="font-serif text-5xl">15</p>
               <p class="text-xl">Abril 2049</p>
             </div>
             <p class="text-gray-300 text-balance">
-              Melhor período para observação da Aurora Boreal. O céu estará
+              Melhor período para observação da Aurora Boreal, o céu estará
               iluminado pelas estrelas.
             </p>
             <a
@@ -233,7 +232,7 @@
           <div
             class="grid snap-center gap-4 bg-green-800 p-6 sm:p-8 rounded-xl"
           >
-            <h3 class="text-green-200 text-2xl font-serif">
+            <h3 class="text-green-300 text-2xl font-serif">
               Chuva de Meteoros
             </h3>
             <div class="text-white">
@@ -241,7 +240,7 @@
               <p class="text-xl">Agosto 2049</p>
             </div>
             <p class="text-gray-300 text-balance">
-              Melhor período para observação da Chuva de Meteoros. O céu estará
+              Melhor período para observação da Chuva de Meteoros, o céu estará
               iluminado pelas estrelas.
             </p>
             <a
@@ -254,7 +253,7 @@
       </div>
     </section>
 
-    <!-- experiências -->
+    <!-- experiencias -->
     <section
       id="experiencias"
       class="container mb-12 sm:mb-16 grid sm:grid-cols-2 gap-8"
@@ -264,9 +263,9 @@
           Experiências Exclusivas
         </p>
         <h2
-          class="mb-8 capitalize text-balance font-serif text-white text-3xl sm:text-4xl lg:text-5xl"
+          class="mb-8 font-serif text-balance text-white text-3xl sm:text-4xl lg:text-5xl capitalize"
         >
-          Escolha Sua Próxima Aventura
+          Escolha sua próxima aventura
         </h2>
         <h3
           class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-green-400 hover:before:w-10 before:transition-[width]"
@@ -298,7 +297,7 @@
           <img
             class="size-full object-cover transition-transform group-hover:scale-110"
             src="../img/canoagem.jpg"
-            alt="Canoagem"
+            alt="canoagem"
           />
           <div
             class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-green-950/80 opacity-0 transition-opacity group-hover:opacity-100"
@@ -306,11 +305,13 @@
             <span class="text-white">Canoagem</span>
           </div>
         </div>
-        <div class="group row-span-2 relative cursor-pointer overflow-hidden rounded-xl">
+        <div
+          class="group row-span-2 relative cursor-pointer overflow-hidden rounded-xl"
+        >
           <img
             class="size-full object-cover transition-transform group-hover:scale-110"
             src="../img/observacao-noturna.jpg"
-            alt="Canoagem"
+            alt="Observação Noturna"
           />
           <div
             class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-green-950/80 opacity-0 transition-opacity group-hover:opacity-100"
@@ -322,13 +323,75 @@
           <img
             class="size-full object-cover transition-transform group-hover:scale-110"
             src="../img/vida-selvagem.jpg"
-            alt="Canoagem"
+            alt="Vida Selvagem"
           />
           <div
             class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-green-950/80 opacity-0 transition-opacity group-hover:opacity-100"
           >
             <span class="text-white">Vida Selvagem</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container bg-[url('../img/padrao.svg')] bg-contain bg-center bg-no-repeat mb-12 sm:mb-16 sm:py-16"
+    >
+      <p
+        class="mb-4 text-center text-green-200 uppercase tracking-widest text-sm"
+      >
+        Ciclo Natural
+      </p>
+      <h2
+        class="mb-8 mx-auto font-serif text-balance text-center max-w-screen-md text-white text-4xl sm:text-6xl"
+      >
+        Ritmo da Floresta
+      </h2>
+
+      <div class="flex flex-col gap-4 sm:flex-row sm:gap-8">
+        <div
+          class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"
+        >
+          <div
+            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
+          >
+            <img src="../img/manha.svg" alt="" />
+          </div>
+          <h3 class="font-serif text-2xl text-white">Amanhecer</h3>
+          <p class="text-gray-400">
+            Desperte com o canto dos pássaros e participe das nossas caminhadas
+            ao ar livre.
+          </p>
+          <span class="text-green-300">05:40 - 07:00</span>
+        </div>
+        <div
+          class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:translate-y-12 sm:hover:translate-y-10"
+        >
+          <div
+            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
+          >
+            <img src="../img/dia.svg" alt="" />
+          </div>
+          <h3 class="font-serif text-2xl text-white">Meio-dia</h3>
+          <p class="text-gray-400">
+            Explore nossas trilhas sombreadas e desfrute de um piquenique
+            gourmet na natureza.
+          </p>
+          <span class="text-green-300">12:00 - 14:00</span>
+        </div>
+        <div
+          class="grid flex-1 gap-4 bg-green-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"
+        >
+          <div
+            class="bg-green-400 rounded-full size-10 flex items-center justify-center"
+          >
+            <img src="../img/noite.svg" alt="" />
+          </div>
+          <h3 class="font-serif text-2xl text-white">Anoitecer</h3>
+          <p class="text-gray-400">
+            Termine seu dia com nossa sessão de observação de estrelas.
+          </p>
+          <span class="text-green-300">19:00 - 21:00</span>
         </div>
       </div>
     </section>
