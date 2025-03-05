@@ -7,7 +7,7 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-green-800 font-sans mb-96">
+  <body class="bg-green-800 font-sans">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
         <span
@@ -398,7 +398,10 @@
     </section>
 
     <!-- contato -->
-    <section id="contato" class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8">
+    <section
+      id="contato"
+      class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8"
+    >
       <div>
         <h1 class="font-serif text-4xl text-green-300 mb-4">Nossos Contatos</h1>
         <p class="text-gray-200 text-balance mb-8">
@@ -471,8 +474,60 @@
             class="rounded-md border-2 border-green-800 bg-green-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-900 placeholder:text-green-900 resize-none"
           ></textarea>
         </div>
-        <button class="place-self-start bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full">Enviar Email</button>
+        <button
+          class="place-self-start bg-green-400 text-green-900 py-2 px-4 inline-block rounded-full"
+        >
+          Enviar Email
+        </button>
       </form>
     </section>
+
+    <!-- parceiros -->
+    <section class="container mb-12 sm:mb16">
+      <ul
+        class="flex flex-col items-center py-4 max-sm:divide-y-2 divide-green-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-green-900 sm:py-8 *:*:max-h-8"
+      >
+        <li><img src="../img/parceiros/caravan.svg" alt="Caravan Logo" /></li>
+        <li><img src="../img/parceiros/dogs.svg" alt="Dogs Logo" /></li>
+        <li>
+          <img src="../img/parceiros/wildbeast.svg" alt="Wildbeast Logo" />
+        </li>
+        <li><img src="../img/parceiros/lescone.svg" alt="Lescone Logo" /></li>
+        <li><img src="../img/parceiros/surfbot.svg" alt="Surfbot Logo" /></li>
+      </ul>
+    </section>
+
+    <footer class="container pb-8">
+      <div class="bg-green-900 grid gap-8 lg:grid-cols-2 mb-8 rounded-2xl p-6 sm:p-12">
+        <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
+          <div>
+            <h3 class="text-white font-serif text-xl mb-4">Endereço</h3>
+            <p class="text-gray-400">
+              Rua da Mata, 123<br />Floresta Nacional<br />Rio de Janeiro, RJ
+            </p>
+          </div>
+          <div>
+            <h3 class="text-white font-serif text-xl mb-4">Contato</h3>
+            <p class="text-gray-400">
+              contato@forest.com <br />+55 21 9999-9999
+            </p>
+          </div>
+        </div>
+        <div class="lg:justify-self-end">
+          <img class="mb-4" src="../img/forest.svg" alt="Forest Logo">
+          <p class="text-gray-400">Conecte-se com a natureza</p>
+        </div>
+      </div>
+      <div
+        class="text-gray-400 flex items-center justify-between gap-8 text-sm max-sm:flex-col-reverse"
+      >
+        <p>© 2024 Forest. Todos os direitos reservados.</p>
+        <ul class="flex gap-8">
+          <li><a class="hover:text-green-300" href="#">Instagram</a></li>
+          <li><a class="hover:text-green-300" href="#">LinkedIn</a></li>
+          <li><a class="hover:text-green-300" href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
