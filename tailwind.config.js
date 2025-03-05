@@ -11,6 +11,10 @@ module.exports = {
         sm: '1rem',
       },
     },
+    fontFamily: {
+      sans: ['DM Sans', 'system-ui', 'sans-serif'],
+      serif: ['DM Serif text', 'Georgia', 'serif'],
+    },
     extend: {
       keyframes: {
         slideIn: {
@@ -55,7 +59,7 @@ module.exports = {
         const delays = {}
         for (let i = 0; i <= 12; i++) {
           delays[`.animate-${i}`] = {
-            "animation-delay": `${i * 100}ms`,
+            'animation-delay': `${i * 100}ms`,
           }
         }
         return delays

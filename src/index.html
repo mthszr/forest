@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <title>Forest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-green-800 font-sans scroll-smooth">
+  <body class="bg-green-800 font-sans">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-green-900">
         <span class="size-2 neon block relative -left-1"></span>
@@ -98,13 +104,10 @@
           class="bg-green-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-green-950 sm:inline-flex sm:flex-row sm:rounded-full"
         >
           vagas para dezembro abertas
-          <a
-            class="btn inline-flex items-center gap-2"
-            href="#contato"
+          <a class="btn inline-flex items-center gap-2" href="#contato"
             >Reserve Hoje
-            <img src="../img/seta.svg" alt="">
-            </a
-          >
+            <img src="../img/seta.svg" alt="" />
+          </a>
         </div>
         <h1
           class="mb-8 font-serif text-balance max-w-screen-sm text-4xl sm:mb-20 sm:text-5xl"
@@ -237,9 +240,7 @@
               Melhor período para observação astronômica. O Céu estará claro e
               as estrelas visíveis.
             </p>
-            <a
-              href="#contato"
-              class="justify-self-start self-end btn"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 23/03</a
             >
           </div>
@@ -255,9 +256,7 @@
               Melhor período para observação da Aurora Boreal, o céu estará
               iluminado pelas estrelas.
             </p>
-            <a
-              href="#contato"
-              class="justify-self-start self-end btn"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 15/04</a
             >
           </div>
@@ -275,9 +274,7 @@
               Melhor período para observação da Chuva de Meteoros, o céu estará
               iluminado pelas estrelas.
             </p>
-            <a
-              href="#contato"
-              class="justify-self-start self-end btn"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 18/08</a
             >
           </div>
@@ -490,18 +487,14 @@
             class="input resize-none"
           ></textarea>
         </div>
-        <button
-          class="place-self-start btn"
-        >
-          Enviar Email
-        </button>
+        <button class="place-self-start btn">Enviar Email</button>
       </form>
     </section>
 
     <!-- parceiros -->
     <section class="container mb-12 sm:mb16">
       <ul
-        class="flex flex-col items-center py-4 max-sm:divide-y-2 divide-green-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-green-900 sm:py-8 *:*:max-h-8"
+        class="flex flex-col items-center justify-center py-4 max-sm:divide-y-2 divide-green-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-green-900 sm:py-8 *:*:max-h-8"
       >
         <li><img src="../img/parceiros/caravan.svg" alt="Caravan Logo" /></li>
         <li><img src="../img/parceiros/dogs.svg" alt="Dogs Logo" /></li>
